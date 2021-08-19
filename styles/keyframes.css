@@ -1,0 +1,13 @@
+@-webkit-keyframes cat-eye-left {
+  to {
+    -webkit-transform: translate(5px, 5px);
+            transform: translate(5px, 5px);
+  }
+}
+@keyframes cat-eye-left {
+  to {
+    -webkit-transform: translate(5px, 5px);
+            transform: translate(5px, 5px);
+  }
+}
+/*# sourceMappingURL=keyframes.css.map */

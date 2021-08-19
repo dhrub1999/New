@@ -1,0 +1,915 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Roboto+Slab:wght@400;500;600;700&family=Roboto:wght@300;400&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  font-size: 50%;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+img {
+  size: 100% 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-width: 100%;
+}
+
+.spcl {
+  color: #d6fffa;
+  text-transform: uppercase;
+  font-family: "Roboto Slab", Palatino, Georgia, Serif;
+  letter-spacing: 1rem;
+  font-weight: 700;
+}
+
+.color {
+  color: #962e99;
+}
+
+.main-frame .hero {
+  height: 100vh;
+  background: url("../images/pattern_tiles-3_11_1_0-0_110_2__ffffff_000000_272e53.png");
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main-frame .hero::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.main-frame .hero .svg-container {
+  position: relative;
+}
+
+.main-frame .hero .svg-container svg {
+  width: 100%;
+  background: #b7ccd4;
+}
+
+.main-frame .hero .svg-container svg #cat #left-eye {
+  -webkit-transform: translate(0px, 0);
+          transform: translate(0px, 0);
+  -webkit-animation: cat-eye-left 5s ease-in-out infinite;
+          animation: cat-eye-left 5s ease-in-out infinite;
+}
+
+.main-frame .hero .svg-container svg #cat #right-eye {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-animation: cat-eye-left 5s ease-in-out infinite;
+          animation: cat-eye-left 5s ease-in-out infinite;
+}
+
+.main-frame .hero .header {
+  display: none;
+}
+
+.main-frame .hero .header .logo h3 {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+  font-size: 2rem;
+  color: white;
+  font-family: "Balsamiq Sans", "Courier New", Courier, monospace;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.main-frame .hero .header .logo h3:hover {
+  color: black;
+}
+
+.main-frame .hero .header nav {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 2.5em 0;
+  background: #962e99;
+  border-radius: 1rem 1rem 0 0;
+  z-index: 10;
+}
+
+.main-frame .hero .header nav .navlinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+}
+
+.main-frame .hero .header nav .navlinks li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-family: "Balsamiq Sans", "Courier New", Courier, monospace;
+  display: block;
+  margin: 0 1em;
+  position: relative;
+  color: #d6fffa;
+  letter-spacing: 0.12rem;
+}
+
+.main-frame .hero .header nav .navlinks li a:active {
+  color: #d6fffa;
+}
+
+.main-frame .hero .header .fixed {
+  position: fixed;
+  width: 100vw;
+  z-index: 999;
+}
+
+.main-frame .hero .container {
+  position: relative;
+  padding-top: 5em;
+  padding-left: 5em;
+  padding-right: 3em;
+}
+
+.main-frame .hero .container .headline {
+  font-size: 6rem;
+  font-family: "Balsamiq Sans", "Courier New", Courier, monospace;
+  letter-spacing: 0.2rem;
+  color: #f58041;
+  font-weight: normal;
+  font-family: "Balsamiq Sans", "Courier New", Courier, monospace;
+  text-transform: capitalize;
+  line-height: 7.5rem;
+}
+
+.main-frame .hero .container .sub {
+  font-size: 1.5rem;
+  margin-top: 3em;
+  letter-spacing: 0.2rem;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  line-height: 2.5rem;
+  font-weight: 300;
+  color: silver;
+}
+
+.main-frame .hero .container .btn-container {
+  margin-top: 3em;
+}
+
+.main-frame .hero .container .btn-container .primary-btn {
+  padding: 1em 3em;
+  border-radius: 0.3em;
+  background: #0493e3;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  font-family: "Balsamiq Sans", "Courier New", Courier, monospace;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.main-frame .hero .container .btn-container .primary-btn:focus {
+  background: white;
+  color: #0493e3;
+}
+
+.main-frame .hero .container .btn-container .primary-btn:hover {
+  background: white;
+  color: #0493e3;
+}
+
+.main-frame .hero .container .rect {
+  position: relative;
+  z-index: 1;
+  margin-top: 5em;
+  border-radius: 4rem;
+  height: 5em;
+  width: 2.5em;
+  background: white;
+}
+
+.main-frame .hero .container .rect .circle {
+  height: 1.2em;
+  width: 1.2em;
+  border-radius: 50%;
+  background: #6c63ff;
+  -webkit-transform: translate(0.65rem, 0.5rem);
+          transform: translate(0.65rem, 0.5rem);
+  -webkit-animation: scroll-indicator 4s ease-in-out infinite;
+          animation: scroll-indicator 4s ease-in-out infinite;
+}
+
+.main-frame .work {
+  margin-top: 20em;
+}
+
+.main-frame .work .text-container .flex h2 {
+  font-size: 4rem;
+  font-family: "Roboto Slab", Palatino, Georgia, Serif;
+  letter-spacing: 0.1rem;
+  color: #0493e3;
+  display: inline-block;
+  margin-left: 1.1em;
+  position: relative;
+}
+
+.main-frame .work .text-container .flex p {
+  font-size: 2rem;
+  font-family: "Balsamiq Sans", "Courier New", Courier, monospace;
+  margin: 0 2.1em;
+  margin-top: 3em;
+  line-height: 1.6em;
+  letter-spacing: 0.1rem;
+}
+
+.main-frame .work .text-container .faded-para {
+  margin: 3em 2em 0;
+  font-size: 2rem;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  letter-spacing: 0.2rem;
+  display: none;
+}
+
+.main-frame .work .background {
+  background: #962e99;
+  margin-top: 3em;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.main-frame .work .background img {
+  height: 100%;
+  width: 100%;
+}
+
+.main-frame .work .padding-container {
+  padding: 0 5em;
+}
+
+.main-frame .work .padding-container .box {
+  margin-top: 10em;
+}
+
+.main-frame .work .padding-container .box h2 {
+  font-size: 3rem;
+  font-family: "Roboto Slab", Palatino, Georgia, Serif;
+  width: 80%;
+  color: #962e99;
+  position: relative;
+}
+
+.main-frame .work .padding-container .box h2::before {
+  content: "01";
+  position: absolute;
+  top: -90%;
+  left: -10%;
+  color: rgba(0, 0, 0, 0.07);
+  font-size: 15rem;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 9em;
+}
+
+.main-frame .work .padding-container .box .background-work {
+  background: transparent;
+  margin-top: 3em;
+}
+
+.main-frame .work .padding-container .box .background-work img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.6);
+          box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.6);
+}
+
+.main-frame .work .padding-container .box .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3em;
+}
+
+.main-frame .work .padding-container .box .btn-container button {
+  padding: 0.7em 1.5em;
+  background: none;
+  border: none;
+  outline: none;
+  font-family: "Balsamiq Sans", "Courier New", Courier, monospace;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 0.3rem;
+  -webkit-box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+}
+
+.main-frame .work .padding-container .box .btn-container .btn1,
+.main-frame .work .padding-container .box .btn-container .btn4,
+.main-frame .work .padding-container .box .btn-container .btn5 {
+  border: 2px solid #d6fffa;
+  background: white;
+  cursor: pointer;
+  margin-right: 0.5em;
+}
+
+.main-frame .work .padding-container .box .btn-container .btn1:hover,
+.main-frame .work .padding-container .box .btn-container .btn4:hover,
+.main-frame .work .padding-container .box .btn-container .btn5:hover {
+  border: 2px solid #0493e3;
+}
+
+.main-frame .work .padding-container .box .btn-container .btn2,
+.main-frame .work .padding-container .box .btn-container .btn3,
+.main-frame .work .padding-container .box .btn-container .btn6 {
+  background: #d6fffa;
+  margin-left: 0.5em;
+  cursor: pointer;
+}
+
+.main-frame .work .padding-container .box .btn-container .btn2:hover,
+.main-frame .work .padding-container .box .btn-container .btn3:hover,
+.main-frame .work .padding-container .box .btn-container .btn6:hover {
+  background: #0493e3;
+  color: white;
+}
+
+.main-frame .work .padding-container .second-item h2::before {
+  content: "02";
+}
+
+.main-frame .work .padding-container .third-item h2::before {
+  content: "03";
+}
+
+.main-frame .about {
+  margin-top: 20em;
+}
+
+.main-frame .about .padding-container {
+  padding: 0 5em;
+}
+
+.main-frame .about .padding-container .text-container h2 {
+  font-size: 4rem;
+  font-family: "Roboto Slab", Palatino, Georgia, Serif;
+  letter-spacing: 0.1rem;
+  color: #0493e3;
+  display: inline-block;
+  margin-left: 1.1em;
+  position: relative;
+  margin: 0;
+}
+
+.main-frame .about .padding-container .text-container p {
+  font-size: 1.5rem;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  margin-top: 1em;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.main-frame .about .padding-container .text-container .primary {
+  display: block;
+  font-size: 2rem;
+  font-family: "Balsamiq Sans", "Courier New", Courier, monospace;
+  margin: 0 2.1em;
+  margin-top: 3em;
+  line-height: 1.6em;
+  letter-spacing: 0.1rem;
+  margin-left: 0;
+}
+
+.main-frame .about .padding-container .tamal-background {
+  width: 100%;
+  background: url("../images/tamal.jpg");
+  height: 20em;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+  margin-top: 3em;
+  -webkit-box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.6);
+          box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.6);
+  border-radius: 0.5rem;
+}
+
+.main-frame .about .padding-container a {
+  display: block;
+  margin-top: 3em;
+  text-decoration: none;
+}
+
+.main-frame .about .padding-container a .know-more {
+  padding: 0.8em 2em;
+  border-radius: 0.3em;
+  background: #6c63ff;
+  border: 1px solid transparent;
+  outline: none;
+  font-size: 1.5rem;
+  font-family: "Balsamiq Sans", "Courier New", Courier, monospace;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  color: white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.main-frame .about .padding-container a .know-more:focus {
+  background: white;
+  color: #6c63ff;
+  border: 1px solid #6c63ff;
+}
+
+.main-frame .about .padding-container a .know-more:hover {
+  background: white;
+  border: 1px solid #6c63ff;
+  color: #6c63ff;
+}
+
+.main-frame .about .padding-container .resources .text-container .left h3 {
+  font-size: 3rem;
+  font-family: "Roboto Slab", Palatino, Georgia, Serif;
+  width: 80%;
+  color: #962e99;
+  margin-top: 3em;
+}
+
+.main-frame .about .padding-container .resources .text-container .left p {
+  margin: 3em 2em 0;
+  font-size: 2rem;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  letter-spacing: 0.2rem;
+  display: none;
+}
+
+.main-frame .about .padding-container .resources .text-container p {
+  font-size: 2rem;
+  font-family: "Balsamiq Sans", "Courier New", Courier, monospace;
+  margin: 0 2.1em;
+  margin-top: 3em;
+  line-height: 1.6em;
+  letter-spacing: 0.1rem;
+  margin: 2em 0 0 0;
+  font-size: 1.5rem;
+}
+
+.main-frame .about .background {
+  background: url("../images/background-teachers.png");
+  height: 182px;
+  background-size: cover;
+  position: relative;
+  margin-top: 3em;
+}
+
+.main-frame .about .background::before {
+  content: "";
+  background: url("../images/code_background.jpg");
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.6;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main-frame .about .persons {
+  padding: 0 5em;
+  display: -ms-grid;
+  display: grid;
+  margin-top: 10em;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2em;
+}
+
+.main-frame .about .persons .card {
+  background: #f3f3f3;
+  padding: 2em;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border-radius: 0.5em;
+  -webkit-box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.main-frame .about .persons .card .photo {
+  height: 8em;
+  width: 8em;
+  border-radius: 50%;
+  background: url("../images/brad.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  -webkit-box-shadow: inset 0px 0px 5px #afafaf;
+          box-shadow: inset 0px 0px 5px #afafaf;
+}
+
+.main-frame .about .persons .card .photo::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 1px solid #0493e3;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-box-shadow: -2px 2px 5px #a3a3a3;
+          box-shadow: -2px 2px 5px #a3a3a3;
+}
+
+.main-frame .about .persons .card .title {
+  margin-top: 1em;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #962e99;
+  letter-spacing: 0.1em;
+  font-family: "Roboto Slab", Palatino, Georgia, Serif;
+}
+
+.main-frame .about .persons .card .desc {
+  margin: 3em 2em 0;
+  font-size: 2rem;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  letter-spacing: 0.2rem;
+  margin-top: 1.2em;
+  line-height: 2.3rem;
+  width: 80%;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Balsamiq Sans", "Courier New", Courier, monospace;
+}
+
+.main-frame .about .persons .card a {
+  text-decoration: none;
+  display: block;
+}
+
+.main-frame .about .persons .card a button {
+  padding: 1rem 4rem;
+  font-family: "Balsamiq Sans", "Courier New", Courier, monospace;
+  margin-top: 2em;
+  letter-spacing: 0.1rem;
+  background: none;
+  color: #6c63ff;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: 0px 0px 10px rgba(108, 99, 255, 0.5);
+          box-shadow: 0px 0px 10px rgba(108, 99, 255, 0.5);
+  border-radius: 0.3rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.main-frame .about .persons .card a button:hover {
+  -webkit-box-shadow: 0px 0px 10px rgba(108, 99, 255, 0.5) inset;
+          box-shadow: 0px 0px 10px rgba(108, 99, 255, 0.5) inset;
+  padding: 1.2rem 4rem;
+}
+
+.main-frame .about .persons .card a button:focus {
+  -webkit-box-shadow: 0px 0px 10px rgba(108, 99, 255, 0.5) inset;
+          box-shadow: 0px 0px 10px rgba(108, 99, 255, 0.5) inset;
+  padding: 1.2rem 4rem;
+}
+
+.main-frame .about .persons .two .photo {
+  background: url("../images/gary_simon.jpg");
+  background-size: cover;
+}
+
+.main-frame .about .persons .three .photo {
+  background: url("../images/freecodecamp.png");
+  background-size: cover;
+}
+
+.main-frame .about .persons .four .photo {
+  background: url("../images/w3schools.jpg");
+  background-size: cover;
+}
+
+.main-frame .contact {
+  margin-top: 20em;
+}
+
+.main-frame .contact .padding-container {
+  padding: 0 5em;
+}
+
+.main-frame .contact .padding-container .headline {
+  font-size: 4rem;
+  font-family: "Roboto Slab", Palatino, Georgia, Serif;
+  letter-spacing: 0.1rem;
+  color: #0493e3;
+  display: inline-block;
+  margin-left: 1.1em;
+  position: relative;
+  margin-left: 0;
+  font-family: "Roboto Slab", Palatino, Georgia, Serif;
+}
+
+.main-frame .contact .padding-container p {
+  margin-top: 1em;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  font-family: "Balsamiq Sans", "Courier New", Courier, monospace;
+  color: #962e99;
+}
+
+.main-frame .contact .padding-container .form-container {
+  margin-top: 3em;
+  background: rgba(214, 255, 250, 0.3);
+  border-radius: 1rem;
+  -webkit-box-shadow: 1px -1px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px -1px 10px rgba(0, 0, 0, 0.1);
+  padding: 4em 4em;
+}
+
+.main-frame .contact .padding-container .form-container .top {
+  height: 50%;
+}
+
+.main-frame .contact .padding-container .form-container .top .text-container {
+  height: 50%;
+  width: 100%;
+}
+
+.main-frame .contact .padding-container .form-container .top .text-container h3 {
+  font-size: 2.5rem;
+  font-family: "Balsamiq Sans", "Courier New", Courier, monospace;
+  color: #6c63ff;
+  letter-spacing: 0.2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.main-frame .contact .padding-container .form-container .top .text-container h3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 1%;
+  border-bottom: 1px solid #6c63ff;
+  -webkit-animation: breadth 5s ease-in-out infinite;
+          animation: breadth 5s ease-in-out infinite;
+}
+
+.main-frame .contact .padding-container .form-container .top .text-container p {
+  font-size: 1rem;
+}
+
+.main-frame .contact .padding-container .form-container .top .text-container .address {
+  margin-top: 3em;
+}
+
+.main-frame .contact .padding-container .form-container .top .text-container .address .para {
+  font-size: 2rem;
+  font-family: "Balsamiq Sans", "Courier New", Courier, monospace;
+  margin: 0 2.1em;
+  margin-top: 3em;
+  line-height: 1.6em;
+  letter-spacing: 0.1rem;
+  margin-left: 0;
+  width: 100%;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  line-height: 3rem;
+  color: rgba(0, 0, 0, 0.363);
+}
+
+.main-frame .contact .padding-container .form-container .top .text-container .address .para .flag {
+  display: inline-block;
+}
+
+.main-frame .contact .padding-container .form-container .top .text-container .address .para .flag svg {
+  height: 1.2rem;
+}
+
+.main-frame .contact .padding-container .form-container .top .text-container .address .para .fa {
+  position: relative;
+}
+
+.main-frame .contact .padding-container .form-container .top .text-container .address .para .fa i {
+  color: #6c63ff;
+  display: block;
+}
+
+.main-frame .contact .padding-container .form-container .top .text-container .address .para .fa::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  height: 3rem;
+  width: 3rem;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.329);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.main-frame .contact .padding-container .form-container .bottom {
+  margin-top: 4em;
+  height: 50%;
+  position: relative;
+}
+
+.main-frame .contact .padding-container .form-container .bottom::before {
+  height: 100%;
+  width: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  top: -5%;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  z-index: -1;
+}
+
+.main-frame .contact .padding-container .form-container .bottom h3 {
+  font-size: 2rem;
+  color: #962e99;
+  font-family: "Balsamiq Sans", "Courier New", Courier, monospace;
+  letter-spacing: 0.2rem;
+  margin-top: 3em;
+  padding-top: 1em;
+}
+
+.main-frame .contact .padding-container .form-container .bottom .form label {
+  font-family: "Balsamiq Sans", "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  color: #6c63ff;
+  margin: 2em 0 0.2em 0;
+  display: block;
+}
+
+.main-frame .contact .padding-container .form-container .bottom .form label:nth-child(1) {
+  padding-top: 1em;
+}
+
+.main-frame .contact .padding-container .form-container .bottom .form input {
+  width: 100%;
+  height: 2em;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 147, 227, 0.1)), to(rgba(108, 99, 255, 0.1)));
+  background: linear-gradient(to bottom, rgba(4, 147, 227, 0.1), rgba(108, 99, 255, 0.1));
+  padding: 0 2rem;
+  color: #962e99;
+  font-family: "Balsamiq Sans", "Courier New", Courier, monospace;
+  letter-spacing: 0.1rem;
+}
+
+.main-frame .contact .padding-container .form-container .bottom .form input:focus {
+  background: rgba(4, 147, 227, 0.4);
+}
+
+.main-frame .contact .padding-container .form-container .bottom .form textarea {
+  border: none;
+  outline: none;
+  background: -webkit-gradient(linear, right bottom, left top, from(#ffffff), to(rgba(150, 46, 153, 0.19)));
+  background: linear-gradient(to top left, #ffffff, rgba(150, 46, 153, 0.19));
+  width: 100%;
+  border-radius: 1.3rem;
+  height: 5em;
+  color: #962e99;
+  font-family: "Balsamiq Sans", "Courier New", Courier, monospace;
+  padding: 1rem 2rem;
+  letter-spacing: 0.1rem;
+  word-wrap: break-word;
+  resize: none;
+}
+
+.main-frame .contact .padding-container .form-container .bottom .form textarea:focus {
+  background: rgba(150, 46, 153, 0.3);
+}
+
+.main-frame .contact .padding-container .form-container .bottom .form button {
+  margin-top: 3em;
+  padding: .9rem 3rem;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  background: #0493e3;
+  border-radius: .3rem;
+  font-family: "Balsamiq Sans", "Courier New", Courier, monospace;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.main-frame .contact .padding-container .form-container .bottom .form button:hover {
+  background: #962e99;
+}
+
+@-webkit-keyframes cat-eye-left {
+  50% {
+    -webkit-transform: translate(16px, -5px);
+            transform: translate(16px, -5px);
+  }
+}
+
+@keyframes cat-eye-left {
+  50% {
+    -webkit-transform: translate(16px, -5px);
+            transform: translate(16px, -5px);
+  }
+}
+
+@-webkit-keyframes scroll-indicator {
+  50% {
+    -webkit-transform: translate(0.65rem, 3.5rem);
+            transform: translate(0.65rem, 3.5rem);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+}
+
+@keyframes scroll-indicator {
+  50% {
+    -webkit-transform: translate(0.65rem, 3.5rem);
+            transform: translate(0.65rem, 3.5rem);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+}
+
+@-webkit-keyframes breadth {
+  50% {
+    width: 100%;
+  }
+}
+
+@keyframes breadth {
+  50% {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
